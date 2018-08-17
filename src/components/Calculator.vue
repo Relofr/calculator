@@ -3,7 +3,7 @@
     <div class="brand-name">Calculator App</div>
     <div class="version">1.0.0-alpha</div>
     <div class="calculator">
-      <div class="display">{{current || '0'}}</div>
+      <div class="display">{{ current || '0' }}</div>
       <div @click="clear" class="btn c">C</div>
       <div @click="sign" class="btn">+/-</div>
       <div @click="percent" class="btn">%</div>
@@ -96,7 +96,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Orbitron");
 .brand-name {
   display: block;
   float: left;
