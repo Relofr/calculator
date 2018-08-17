@@ -85,17 +85,11 @@ export default {
       this.setPrevious();
     },
     equal() {
-      this.current = `${
-        this.operator(
-          parseFloat(this.current),
-          parseFloat(this.previous)
-        ).toString().length >= 5
-          ? this.operator(
-              parseFloat(this.current),
-              parseFloat(this.previous)
-            ).toExponential(5)
-          : this.operator(parseFloat(this.current), parseFloat(this.previous))
-      }`;
+      this.current = `${this.operator(
+        parseFloat(this.previous), 
+        parseFloat(this.current)
+      )}`;
+      this.previous = null;
     }
   }
 };
